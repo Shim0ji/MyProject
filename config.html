@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page index du site</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script-param.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body class="clearTheme">
+    <header>
+        <img src="images/logo.png" alt="logo de l'ENI">
+        <h1 id="title">Ici le titre de la promo</h1>
+        <nav class="Navbar">
+            <a href="index.html"><button type="button">Accueil</button></a>
+            <a href="config.html"><button type="button">Préférences</button></a>
+            <a href="info.html"><button type="button">Informations</button></a>
+            <a href="map.html"><button type="button">Carte</button></a>
+        </nav>
+    </header>
+    <main>
+        <section id="prefsContent">
+            <h1>Préférences du site</h1>
+            <article class="standArt">
+                <p>
+                    Personnalisez les couleurs du site à votre convenance ! <br>
+                    <br>
+                    Choissiez une thème, ou bien définissez vous-même la couleur de l'arrière plan. <br>
+                    <br>
+                    Définissez également l'affichage de la liste des apprenants
+                </p>
+                <br><br>
+                <form action="">
+                    <label for="theme">Thème du site</label>
+                    <select name="theme" id="themeSelect">
+                        <option value="clair">Clair</option>
+                        <option value="sombre">Sombre</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="colorSelector">Couleur de fond d'écran</label>
+                    <input type="color" name="colorSelector" id="colorSelector" value="#FFFFFF">
+                    <button id="colorClear">X</button>
+                    <br>
+                    <br>
+                    <label for="dispList">Type d'affichage : </label>
+                    Tableau<input type="radio" name="dispList" id="dispOptList" checked>
+                    Cartes<input type="radio" name="dispList" id="dispOptCard">
+                    <br><br>
+                    <button id="prefsConf1" type="submit">Enregistrer</button>
+                </form>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,510 @@
+/*
+éléments du thème clair
+*/
+.darkTheme {
+    color:aliceblue;
+    background-color: rgb(37, 37, 44);
+}
+    
+/*
+éléments du thème clair
+*/
+.clearTheme {
+    color:black;
+    background-color: rgb(119, 163, 201);
+}
+.clearTheme {
+    color: #10164b;
+}
+/*
+éléments génériques
+1. HEADER
+*/
+a {
+    text-decoration: none;
+    
+}
+body{
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header {
+    background: linear-gradient(to bottom, #134a7f, #0f3e69);
+    margin: 0px;
+    padding: 20px 0 20px 0px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+header img{
+    width: 100px;
+    height: 100px;
+}
+header h1 {
+    color: rgb(228, 247, 255);
+    padding: 20px;;
+}
+.Navbar {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 20px;
+}
+.Navbar button{
+    height: 70px;
+    min-width: 150px;
+    max-width: 150px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px;
+    border-width: 0;
+    background-color: #3996d4;
+    color: #10185f;
+    border-radius: 2px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+ }
+ .Navbar button:hover{
+    
+    background-color: #51bfeb;
+    color: #ffffff;
+    
+ }
+/*
+éléments génériques
+2.LES SECTIONS
+*/
+main {
+    text-align: center;
+    padding: 0px;
+    width: 100vw;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main h1 {
+    font-size: 2em;
+}
+.clearTheme .contRadio {
+    background-image: url("images/radioBGcl.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 10px;
+    padding-top: 15px;
+    height: 34px;
+}
+.darkTheme .contRadio {
+    background-image: url("images/radioBG.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 10px;
+    padding-top: 15px;
+    height: 34px;
+}
+main button{
+    height: 30px;
+    width: 70px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px;
+    border-width: 0;
+    background-color: #3996d4;
+    color: #10185f;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+ }
+main button:hover {
+    background-color: #51bfeb;
+    color: #ffffff;
+ }
+ .standArt {
+    background-color: #42709b;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ .standArt2 {
+    background-color: #1f486e;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    font-size: 17pt;
+    color: white;
+    border-radius: 15px;
+    border-style: none;
+ }
+ .standArt, .standArt p, .standArt a {
+    font-size: 14pt;
+    text-align: center;
+    color: white;
+ }
+ .standArt h1{
+    color: #191f57;
+    margin: 0 0 10px 0;
+    font-size: 20pt;    
+ }
+
+ /*
+ /////////////////////////// SPECIFS Accueil ///////////////////
+ */
+.tableEnTete {
+    background-color: #0f3e69;
+    color: #3996d4;
+}
+main table {
+    padding: 5px 5px 15px 5px;
+    margin: 0px 20px 20px 20px;
+    background-color: #0f3e69;
+    border-radius: 10px;
+    min-width: 600px;
+}
+main table td{
+    background-color: #42709b;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+#studentList {
+    text-align: center;
+    display: block;
+    justify-content: center;
+}
+#prefsContent {
+    display: block;
+}
+#infoContent {
+    display: block;
+}
+#mapZone {
+    display: block;
+}
+#colorClear {
+    display: none;
+}
+#studentList{
+    min-width: 600px;
+}
+.listBlock {
+    min-width: 600px;
+    color: white;
+    display: block;
+    /*height: 600px; /*OPTION ASSENSEUR*/
+    overflow-y: auto;
+}
+.cardBlock {
+    color: white;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 60vw;
+}
+.cardBlock div {
+    max-width: 250px;
+    min-width: 250px;
+    height: 150px;
+    background-image: url("images/cardBG.png");
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 4 #ffffff;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #a7cff5;
+}
+.cardBlock h1 {
+    font-size: 1.5em;
+}
+.cardBlock h2 {
+    color: #063453;
+    font-size: 1.15em;
+}
+.cardBlock button {
+    height: 30px;
+    width: 70px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px;
+    border-width: 0;
+    background-color: #76bdec;
+    color: #10164b;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #1a4166;
+ }
+ .cardBlock button:hover {
+    background-color: #51bfeb;
+    color: #ffffff;
+    border-color: #ffffff;
+    
+ }
+.clearTheme .cardDetails {
+    display: none;
+    color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6)
+}
+.darkTheme .cardDetails {
+    display: none;
+    color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6)
+}
+.cdID {
+    position: fixed;
+    top: 30%;
+    left: 35%;
+    right: 20%;
+    max-width: 550px;
+    min-width: 500px;
+    background-color: #2a6aa7;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #73b2ec;
+}
+.cdID img {
+    margin: 10px;
+}
+.cdID div {
+    font-size: 1.15em;
+    text-align: left;
+    color: #0c2944;
+    margin: 20px;
+    text-align: left;
+}
+.cdID div span, .cdID p{
+    font-size: 1.2em;
+    color: rgb(255, 255, 255);
+    margin: 20px;
+    font-weight: bold;
+}
+.cdID div h1{
+    font-size: 1.2em;
+    text-decoration: underline;
+    margin-top: 0px;
+}
+#crdClose {
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 45px;
+    height: 45px;
+    background-color: #154a7c;
+    border-radius: 100%;
+}
+#crdClose:hover {
+    color: red;
+    background-color: #641b1b;
+}
+
+/*
+/////////////////////////// SPECIFS Préférence /////////////////////////// 
+*/
+.standArt button{
+    background-color: #274e72;
+    width: 100px;
+    color: #5db8f5;
+ }
+ #colorClear{
+    float: right;
+    width: 30px;
+    margin: -50;
+ }
+ #colorClear:hover {
+    color: red;
+    background-color: #641b1b;
+}
+
+ form {
+    margin: 20px;
+    padding: 50px;
+    border-radius: 100%;
+    background-color: #538bc0;
+    max-width: 350px;
+ }
+
+
+/*
+/////////////////////////// SPECIFS Carte /////////////////////////// 
+*/
+#map {
+    margin: 20px;
+    min-height: 300px;
+    height: 500px;
+    max-width: 1000px;
+    display: block;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #1a4166;
+}
+#mapZone .standArt, #mapZone .standArt p{
+    max-width: 1000px;
+    font-size: 25px;
+}
+
+/*
+///////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////responsive
+///////////////////////////////////////////////////////////////////////
+*/
+
+@media screen and (max-width : 576px) and (orientation: portrait) {
+
+    body {
+        font-size: 1rem;
+    }
+    #title {
+        padding: 5px;
+        text-align: center;
+    }
+    h1 {
+        font-size: 1rem;
+    }
+    header img{
+        float: left;
+        width: 50px;
+        height: 50px;
+        margin: 0;
+        padding: 0;
+    }
+    header #title{
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 0;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Navbar {
+        max-width: 400px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 5px;
+    }
+    .Navbar button{
+        height: 40px;
+        font-size: 14px;
+        margin: 2px;
+        min-width: 78px;
+        max-width: 85px;
+     }
+
+     section h1 {
+        font-size: 1.5rem;
+     }
+
+    .standArt, .standArt2, .standArt p, .standArt a, .standArt h1{
+        font-size: 1rem;
+     }
+
+     /*
+     ///////////////////////////////////////////////////////// ACCUEIL /////
+     */
+     main table, #studentList, .listBlock {
+        min-width: 250px;
+    }
+     .cardBlock {
+        max-width: 98%;
+     }
+     .cardBlock div {
+        max-width: 130px;
+        min-width: 130px;
+        max-height: 120px;
+        background-image: url("images/cardBG2.png");
+     }
+     .cardBlock h1 {
+        font-size: 1rem;
+        margin: 5px;
+    }
+    .cardBlock h2 {
+        margin: 5px;
+        color: #063453;
+        font-size: 1rem;
+    }
+     .cdID {
+        top: 18%;
+        left: 2%;
+        right: 4%;
+        width: auto;
+        flex-direction: row;
+        align-items: center;
+        min-width: 320px;
+        max-width: 490px;
+        
+    }
+    .cdID img {
+        width: 90px;
+        height: 90px;
+        margin: 10px;
+    }
+    .cdID div {
+        font-size: 1rem;
+        text-align: left;
+        color: #0c2944;
+        margin: 5px;
+        text-align: left;
+    }
+    .cdID div span, .cdID p{
+        font-size: 1rem;
+        color: rgb(255, 255, 255);
+        margin: 10px;
+        font-weight: bold;
+    }
+    .cdID div h1{
+        font-size: 1rem;
+        text-decoration: underline;
+        margin-top: 0px;
+    }
+     /*
+     ///////////////////////////////////////////////////////// CARTE //////
+     */
+    #mapZone .standArt, #mapZone .standArt p{
+        max-width: 800px;
+        font-size: 1rem;
+    }
+
+    #map {
+        margin: 20px;
+        height: 300px;
+        max-width: 560px;
+        display: block;
+        border-radius: 15px;
+        border-style: solid;
+        border-width: 3px;
+        border-color: #1a4166;
+    }
+}

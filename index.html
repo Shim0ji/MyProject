@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page index du site</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body class="clearTheme">
+    <header>
+        <img src="images/logo.png" alt="logo de l'ENI">
+        <h1 id="title">Ici le titre de la promo</h1>
+        <nav class="Navbar">
+            <a href="index.html"><button type="button">Accueil</button></a>
+            <a href="config.html"><button type="button">Préférences</button></a>
+            <a href="info.html"><button type="button">Informations</button></a>
+            <a href="map.html"><button type="button">Carte</button></a>
+        </nav>
+    </header>
+    <main>
+        <section id="studentList">
+            <h1>Liste des apprenants</h1>
+            <div class="contRadio">
+                <label for="dispList">Type d'affichage : </label>
+                Liste<input type="radio" name="dispList" id="dispOptList" checked>
+                Cartes<input type="radio" name="dispList" id="dispOptCard">
+            </div>
+            <!-- version liste-->
+            <article id="blockDispList" class="listBlock">
+                <table id="displTable">
+                    <tr>
+                        <td class="tableEnTete"><strong>Nom</strong></td>
+                        <td class="tableEnTete"><strong>prénom</strong></td>
+                        <td class="tableEnTete"><strong>ville</strong></td>
+                        
+                    </tr>
+                </table>
+            </article>
+
+            <!-- version cartes de visite-->
+            <article id="blockDispCard" class="cardBlock">
+            </article>
+            <!-- affichage des détails-->
+            <article id="blockBigData" class="cardDetails">
+                <div id="insideBlock" class="cdID">
+                    <img src="images/avatar.png"> 
+                    <button id="crdClose">X</button>
+                    <br>
+                    <div id="cdID">
+                        Nom :<span id="cdName"></span><br><br>
+                        Prénom :<span id="cdFName"></span><br><br>
+                        Ville :<span id="cdCity"></span><br>
+                    </div>
+                    <div>
+                        <h1>Note sur l'apprenant :</h1>
+                        <p id="cdNote"></p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

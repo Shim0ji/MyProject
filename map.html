@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page index du site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script> 
+    <script defer src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script defer src="mapscript.js"></script>
+</head>
+<body class="clearTheme">
+    <header>
+        <img src="images/logo.png" alt="logo de l'ENI">
+        <h1 id="title">Ici le titre de la promo</h1>
+        <nav class="Navbar">
+            <a href="index.html"><button type="button">Accueil</button></a>
+            <a href="config.html"><button type="button">Préférences</button></a>
+            <a href="info.html"><button type="button">Informations</button></a>
+            <a href="map.html"><button type="button">Carte</button></a>
+        </nav>
+    </header>
+    <main>
+        <section id="mapZone">
+            <h1>Carte</h1>
+            <article class="standArt">
+                <p>
+                    Retrouvez tous les apprenants sur notre carte ! <br>
+
+                </p>
+            </article>
+            <div id="map"></div>
+            <br>
+        </section>
+    </main>
+</body>
+</html>
